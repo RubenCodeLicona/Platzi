@@ -1,0 +1,100 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a /* todas las etiquetas de ancla*/
+{
+    text-decoration: none; /* quite el subrrayado a las etiquetas*/
+    cursor: pointer;
+}
+
+header /*0-100*/
+{
+    width: 100%;
+    height: 60px;
+}
+header nav 
+{
+    display:  flex;  /*display flex*/
+    justify-content: flex-end ;     /* lo justifica a la derecha(final de la pantalla)*/       
+}
+
+header nav .nav-right-section
+{
+    width: 250px;
+    height: auto; /* Toma de forma automatica la altura del header */
+    display: flex; /*para poscicionar los elementos del nav habilita las opciones que justifican y centran el contenido*/
+    list-style: none; /*quita los puntos*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a  /* "a" es un elemento de ancla*/
+{
+  margin-right: 10px;  /* separar los elementos*/
+  color: #000000;   /*color de las letras*/
+
+}
+
+nav .nav-right-section .menu-icon
+{
+    background-image: url('https://vectorified.com/images/google-menu-icon-5.png'); /*cargar la imagen desde I*/
+    background-repeat: no-repeat; /*para que la imagen no se repita intentando rellenar el espacio*/
+    background-position: center;
+    background-size: contain; /* para que se aproxime al tamaño del contenedor*/
+    width: 25px; /*Ancho*/
+    height: 25px;
+    margin-right: 7px;
+}
+
+nav .nav-right-section img
+{
+    border-radius: 50%; /*para modificar la imagen como un circulo*/
+    margin-left: 7px; /*separacion hacia la izquierda*/
+}
+
+main
+{
+    margin-top: 150px; /**separacion con respecto a lo alto de la pantalla*/
+    text-align: center; /*centra el texto*/
+
+}
+
+main .main-logo
+{
+    width: 530px;  /*El ancho que tendra la imagen*/
+    margin: 0 auto;  /*centro la imagen, de forma dinamica divide el espacio restante(que no se ocupa ) entre 2 ya que solo estamos usando 530px y sobrara una cantidad de pixeles "n" los cuales sobn los que divide/2*/
+    margin-bottom: 35px; /*Margen hacia abajo(separacion hacia abajo)*/
+}
+
+main .main-logo img
+{
+    width: 300px;
+}
+
+main .main-input 
+{
+    width: 530px; /* se define el ancho de la sección*/
+    margin: 0 auto; /*se autoposicione en el centro*/
+    margin-bottom: 35px; /*Empuje los botones hacia abajo */
+}
+main .main-input-container
+{
+    width: 525px; /*define el ancho del cuadro para buscar */
+    border-radius: 100px; /*Genere el radio en la curvatura*/
+    border: 1px solid #dfe1e5; /*Genera el borde */
+    display: flex; /*colocar los elementos de forma lineal*/
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input
+{
+    width: 450px; /* al modificar el ancho, hace q parezca que se mueve el indicador del buscador*/
+    height: 40px;
+    border: none; /*quitamos el borde*/
+    outline: none; /*quitamos el color azul al seleccionar el cuadro */
+}
