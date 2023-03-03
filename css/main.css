@@ -98,3 +98,99 @@ main .main-input input
     border: none; /*quitamos el borde*/
     outline: none; /*quitamos el color azul al seleccionar el cuadro */
 }
+
+main .main-input-container:hover /*un efecto al agregar la palabra hover*/
+{
+    box-shadow: 0 1px 6px 0 #20212447; /*efecto de la sombra*/
+     border-color: #dfe1e500;   /*Borde del contenedor*/
+}
+
+
+main .main-input .search-icon
+{
+    background-image: url(' https://img.icons8.com/android/24/000000/search.png '); /*colocar la imagen desde internet*/
+    background-repeat: no-repeat; /*que no se repita*/
+    background-position: center; /*centrar*/
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon
+{
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png '); /*colocar la imagen desde internet*/
+    background-repeat: no-repeat; /*que no se repita*/
+    background-position: center; /*centrar*/
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons
+{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div /*la configuración de los bloques*/
+{
+    display: inline-block;
+}
+
+main .main-buttons button/*estilis de los botones*/
+{
+    height: 36px; /*se define la altura*/
+    background-color: #f2f2f2; /*se le pone un color */
+    border: 0; /*se le quita el borde*/
+    font-size: 14px;  
+    color: #5f6368 ;
+    border-radius: 5px; /*se les da un radio*/
+    padding: 0 15px; /*espacio interno que tienen los elementos con su contenedor padre*/
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover /*un efecto al agregar la palabra hover, para que se vea una sombra cuando ponemos encima el mouse*/ 
+{
+    border:  1px solid #c6c6c6; /*contorno*/
+    border: 0 1px 1px #000001;  /*sombra*/
+    color: #222;/*color del texto*/
+}
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid; /*tiene la siguinete propiedad*/
+    grid-template-columns: 1fr 1fr; /*el temlate de las columnas secciona en dos partes, genera la cuadricula */
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+
+}
+
+footer ul
+{
+    margin: 10px;
+    list-style: none; /*quita los puntos*/
+    display: flex; /*para poscicionar los elementos del nav habilita las opciones que justifican y centran el contenido*/
+    padding-left: 0;
+    
+}
+
+footer .footer-left
+{
+    justify-self: left; /*que lo justifique y lo mande a la izquierda*/
+}
+
+footer .footer-right
+{
+   justify-self: right; /*que lo justifique y lo mande a la derecha*/  
+}
+footer ul li a
+{
+    margin: 10px;
+    color: #5f6368;
+}
